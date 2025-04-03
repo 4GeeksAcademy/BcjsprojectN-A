@@ -1,5 +1,76 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+html {
+    visibility: visible;
+    opacity: 1;
+}
+
 body{
-    background: white;
+opacity: 1;
+background-image:  linear-gradient(#754ad1 2px, transparent 2px), linear-gradient(90deg, #5729bcba 2px, transparent 2px), linear-gradient(#003285 1px, transparent 1px), linear-gradient(90deg, #2A629A 1px, #382a55 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+@keyframes rotate-bg-color {
+    0% {
+      background-color: #112980;
+    }
+    25% {
+      background-color: #2950bcba;
+    }
+    50% {
+      background-color: #2142d3;
+    }
+    75% {
+      background-color: #003285;
+    }
+    100% {
+      background-color: #2A629A;
+    }
+  }
+
+.smallBg {
+    height: 600px;
+    width: 1300px;
+    background-color: #003285;
+    border: 1px solid #000;
+    border-radius: 2%;
+    text-align:center;
+    height: 500px;/*height needs to be set*/
+    width: 700px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: rotate-bg-color 10s infinite;
+    box-shadow: 10px 0px 500px 200px rgba(59, 48, 183, 0.6);
+    transition: 0.3s;
+}
+#excuse {
+    color:#100439;
+    text-decoration:none;
+}
+
+.pseudoCard {
+    color: #100439;
+    background-color: #537bd3;
+    box-shadow: 0 5px 8px 0 rgba(6, 180, 223, 0.5);
+    transition: 0.3s;
+    text-align: center;
+    width: 58%;
+    height:auto;
+    padding: 4px;
+    border-color: #460bad;
+    border-style: double;
+    display: block;
+    margin: 20% 21%;
+    border-radius: 2%;
+    
+}
+.pseudoHeader {
+    background-color: #48d0e42e;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    color: #100439;
 }
